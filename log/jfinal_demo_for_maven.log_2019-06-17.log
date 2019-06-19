@@ -1,6 +1,6 @@
 
-2019-06-19 16:58:32
-[ERROR]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: init datasource error, url: jdbc:mysql://10.27.143.11/myblog?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+2019-06-17 17:47:07
+[ERROR]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: init datasource error, url: jdbc:mysql://10.27.143.11/cps?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -47,7 +47,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.jfinal.server.undertow.UndertowServer.doStart(UndertowServer.java:262)
 	at com.jfinal.server.undertow.UndertowServer.start(UndertowServer.java:159)
 	at com.jfinal.server.undertow.UndertowServer.start(UndertowServer.java:84)
-	at com.demo.common.DemoConfig.main(DemoConfig.java:34)
+	at com.demo.common.DemoConfig.main(DemoConfig.java:33)
 Caused by: java.net.ConnectException: Connection timed out: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
@@ -61,7 +61,7 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
 	... 37 more
 
-2019-06-19 16:58:32
+2019-06-17 17:47:07
 [ERROR]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} init error
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -109,7 +109,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.jfinal.server.undertow.UndertowServer.doStart(UndertowServer.java:262)
 	at com.jfinal.server.undertow.UndertowServer.start(UndertowServer.java:159)
 	at com.jfinal.server.undertow.UndertowServer.start(UndertowServer.java:84)
-	at com.demo.common.DemoConfig.main(DemoConfig.java:34)
+	at com.demo.common.DemoConfig.main(DemoConfig.java:33)
 Caused by: java.net.ConnectException: Connection timed out: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
@@ -123,7 +123,7 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
 	... 37 more
 
-2019-06-19 16:58:32
+2019-06-17 17:47:07
 [ERROR]-[Thread: main]-[com.jfinal.core.Config.startPlugins()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -149,7 +149,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.jfinal.server.undertow.UndertowServer.doStart(UndertowServer.java:262)
 	at com.jfinal.server.undertow.UndertowServer.start(UndertowServer.java:159)
 	at com.jfinal.server.undertow.UndertowServer.start(UndertowServer.java:84)
-	at com.demo.common.DemoConfig.main(DemoConfig.java:34)
+	at com.demo.common.DemoConfig.main(DemoConfig.java:33)
 Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.

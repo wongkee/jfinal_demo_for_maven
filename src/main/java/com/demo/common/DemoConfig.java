@@ -3,6 +3,7 @@ package com.demo.common;
 import com.demo.blog.BlogController;
 import com.demo.common.model._MappingKit;
 import com.demo.index.IndexController;
+import com.demo.login.LoginController;
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
 import com.jfinal.config.Interceptors;
@@ -39,6 +40,9 @@ public class DemoConfig extends JFinalConfig {
 	 */
 	static void loadConfig() {
 		if (p == null) {
+			/*
+			* 使用第一个找到的属性文件
+			* */
 			p = PropKit.useFirstFound("demo-config-pro.txt", "demo-config-dev.txt");
 		}
 	}
@@ -48,7 +52,8 @@ public class DemoConfig extends JFinalConfig {
 	 */
 	public void configConstant(Constants me) {
 		loadConfig();
-		
+
+		/*运行在开发模式，会对每次请求输出报告，如输出本次请求的URL、Controller、Method以及携带的参数*/
 		me.setDevMode(p.getBoolean("devMode", false));
 		
 		/**
@@ -63,12 +68,22 @@ public class DemoConfig extends JFinalConfig {
 	
 	/**
 	 * 配置路由
+	 * Routes.setBaseViewPath(baseViewPath) 设置基础路径
+	 * Routes.setBaseViewPath(baseViewPath)
+	 *  Controller.render(view)
+	 * 最终访问路径 finalView = baseViewPath + viewPath + view
 	 */
 	public void configRoute(Routes me) {
 		me.add("/", IndexController.class, "/index");	// 第三个参数为该Controller的视图存放路径
 		me.add("/blog", BlogController.class);			// 第三个参数省略时默认与第一个参数值相同，在此即为 "/blog"
+		me.add("/login", LoginController.class);
 	}
-	
+
+	/*
+	定义模板文件
+	在模板文件中使用 #define指令定义了template function  可直接查看_layout源码
+	通过以下的定义后可在任意地方直接调用 _layout.html 里头的 template function
+	*/
 	public void configEngine(Engine me) {
 		me.addSharedFunction("/common/_layout.html");
 		me.addSharedFunction("/common/_paginate.html");

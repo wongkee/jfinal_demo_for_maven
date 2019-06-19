@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta name="robots" content="index, follow"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>Lightweight Admin Template</title>
+		<link rel="stylesheet" type="text/css" href="style/lightweight-admin-template.css">
+		<link rel="stylesheet" type="text/css" href="style/bem-kit.min.css">
+
+</head>
+<body class="site">
+
+  <header role="header" class="site__header header" id="home">
+  		<div class="header__wrapper">
+        <div class="header__brand">
+          <img src="style/brand.png" />
+          <div class="header__title">
+            Lightweight Admin Template
+          </div>
+        </div>
+
+        <div class="header__account account account--has-login">
+            <div class="account__wrapper">
+              <img class="account__img" src="style/irfan-maulana.jpg" />
+              <span class="account__name">Irfan</span>              
+            </div>
+            <i class="account__arrow fa fa-angle-down js--show-dropdown-menu"></i>
+
+            <div class="account__menu">
+              <ul class="account__menu-wrapper">
+                <li class="account__menu-item"><a href="#profil">Profile</a></li>
+                <li class="account__menu-item"><a href="#logout">Logout</a></li>
+              </ul>
+            </div>
+
+        </div>  
+
+        <div class="header__nav--mobile">
+          <div class="header__nav-btn" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>      
+
+      </div>
+  </header>
+
+
+  <main role="main" class="site__main main">
+    <nav class="main__nav nav">
+
+      <ul class="nav__wrapper">
+        <li class="nav__item">
+          <a href="index.html">
+            <i class="nav__icon fa fa-dashboard"></i> Dashboard
+          </a>
+        </li>
+        
+        <li class="nav__item nav__item--has-child nav__item--active">
+          <a href="#">
+            <i class="nav__icon fa fa-desktop"></i> UI Elements 
+            <i class="nav__arrow fa fa-angle-down"></i>
+          </a>
+
+          <ul class="nav__wrapper nav__wrapper--child nav__wrapper--is-open">
+            <li class="nav__item--child nav__item--active"><a href="typography.html">Typography</a></li>
+            <li class="nav__item--child"><a href="cards.html">Cards</a></li>
+            <li class="nav__item--child"><a href="buttons.html">Buttons</a></li>
+            <li class="nav__item--child"><a href="alert.html">Alert</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <a href="tables.html">
+            <i class="nav__icon fa fa-table"></i> Tables
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="forms.html">
+            <i class="nav__icon fa fa-edit"></i> Forms
+          </a>
+        </li>
+        
+      </ul>
+
+      <div class="footer__wrapper">
+
+        <div class="footer__text">
+          <span>Crafted with &nbsp;<i class="fa fa-heart-o"></i>&nbsp; by Irfan Maulana</span>
+        </div>
+
+        
+      </div>
+
+    </nav>
+    <article class="main__content content">
+      <div class="content__wrapper grid">
+        <div class="grid__col-3">              
+          <h4>Heading</h4>
+          <h1>h1</h1>
+          <h2>h2</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
+          <h5>h5</h5>
+        </div>
+        <div class="grid__col-10">
+          <h4>Paragraph</h4>
+          <p>
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          Lorem ipsum dolor sit amet 
+          </p>
+
+          <h4>Blockquote</h4>
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          </blockquote>
+
+        </div>
+      </div>
+    </article>
+  </main>
+  		<script src="style/jquery.min.js"></script>
+		<script src="style/89344806bd.js"></script>
+		<script src="style/lightweight-admin-template.js"></script>
+</body>
+</html>

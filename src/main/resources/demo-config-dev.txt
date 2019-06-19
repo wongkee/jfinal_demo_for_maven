@@ -1,5 +1,5 @@
 # config
-jdbcUrl = jdbc:mysql://localhost/cps?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+jdbcUrl = jdbc:mysql://10.27.143.11/myblog?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
 user = root
 password =141540
 devMode = true

@@ -32,6 +32,8 @@ public class BlogController extends Controller {
 	 */
 	@Before(BlogValidator.class)
 	public void save() {
+		//getBean是适应与setter方法一致的属性名进行数据注入，建议优先使用getBean 方法
+		//getModel 使用数据库表段名进行数据注入
 		getBean(Blog.class).save();
 		redirect("/blog");
 	}
